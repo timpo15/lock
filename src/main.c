@@ -110,12 +110,15 @@ int record_statistics(int suc, int fail) {
         snprintf(str, 128, "PID: %d: GOOD: %d, BAD: %d\n", getpid(), suc, fail);
         int res = write(fd, str, strlen(str));
         if (res == -1) {
+            release_lock("stats.lck");
             return -1;
         }
         if (close(fd) < 0) {
+            release_lock("stats.lck");
             return -1;
         }
     } else {
+        release_lock("stats.lck");
         return -1;
     }
 
