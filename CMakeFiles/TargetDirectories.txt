@@ -1,0 +1,3 @@
+/home/timpo/study/unix/lock/CMakeFiles/mainn.dir
+/home/timpo/study/unix/lock/CMakeFiles/edit_cache.dir
+/home/timpo/study/unix/lock/CMakeFiles/rebuild_cache.dir

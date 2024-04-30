@@ -1,0 +1,4 @@
+Cannot generate into /home/timpo/study/unix/lock
+It is already used for unknown project
+
+Please either delete it manually or select another generation directory
